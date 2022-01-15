@@ -1,0 +1,23 @@
+/*Kích thước cho Smart phone nhỏ*/
+@media screen and (min-width: 240px) {
+}
+
+/*Kích thước cho Smart phone lớn(480 x 640)*/
+@media screen and (min-width: 320px) {
+}
+
+/*Kích thước cho Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px) {
+}
+
+/*Kích thước cho Tablet lớn(768 x 1024)*/
+@media screen and (min-width: 768px) {
+}
+
+/*Kích thước cho Laptop nhỏ(1024 x 768)*/
+@media screen and (min-width: 1024px) {
+}
+
+/*Kích thước cho Laptop lớn(1280 x 1024)*/
+@media screen and (min-width: 1280px) {
+}

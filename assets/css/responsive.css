@@ -43,6 +43,11 @@
   .show {
     display: block;
   }
+
+  /* search */
+  .search-input {
+    width: 60%;
+  }
 }
 
 /*Kích thước cho Smart phone lớn(480 x 640)*/
@@ -55,6 +60,10 @@
 
 /*Kích thước cho Tablet lớn(768 x 1024)*/
 @media screen and (min-width: 768px) {
+  /* Search css */
+  .search-input {
+    width: 50%;
+  }
 }
 
 /*Kích thước cho Laptop nhỏ(1024 x 768)*/
@@ -90,6 +99,11 @@
   .header-link:hover {
     color: var(--white-color);
     background-color: var(--green-color);
+  }
+
+  /* Search css */
+  .search-input {
+    width: 35%;
   }
 }
 

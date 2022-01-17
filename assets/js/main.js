@@ -11,4 +11,18 @@ class Main {
             navbar.classList.toggle('active')
         })
     }
+
+    clickSearch () {
+        const iconSearch = this.$('.icon-search')
+        const formSearch = this.$('.search-form')
+        const iconSearchClose = this.$('.search-close')
+
+        iconSearch.addEventListener('click', () => {
+            formSearch.classList.add('active')
+        })
+
+        iconSearchClose.addEventListener('click', () => {
+            formSearch.classList.remove('active')
+        })
+    }
 }

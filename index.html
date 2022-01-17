@@ -35,7 +35,7 @@
                     <li class="header-other header-menu">
                         <i class="fas fa-list menu-bars"></i>
                     </li>
-                    <li class="header-other">
+                    <li class="header-other icon-search">
                         <i class="fas fa-search"></i>
                     </li>
                     <li class="header-other">
@@ -48,12 +48,21 @@
             </div>
         </header>
         <!-- End header -->
+
+        <!-- Form search -->
+        <form class="search-form">
+            <input type="text" id="search" placeholder="Search here..." autocomplete="off" class="search-input">
+            <label for="search"><i class="fas fa-search"></i></label>
+            <i class="fas fa-times search-close"></i>
+        </form>
+        <!-- End form -->
     </div>
     
     <script src="./assets/js/main.js"> </script>
     <script>
         const main =  new Main()
         main.menuToggle()
+        main.clickSearch()
     </script>
 </body>
 </html>

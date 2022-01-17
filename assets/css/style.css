@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+:root {
+  --green-color: #27ae60;
+  --blue-color: #192a56;
+  --light-color: #eeeeee;
+  --text-color: #111111;
+  --white-color: #ffffff;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+html,
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.app {
+  margin: 0 auto;
+}
+
+/* Header css */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  box-shadow: var(--box-shadow);
+  z-index: 1000;
+}
+
+.header-box {
+  max-width: 1280px;
+  height: 70px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 2.4rem;
+  color: var(--blue-color);
+  font-weight: 700;
+  display: flex;
+  gap: 0 5px;
+  cursor: pointer;
+}
+
+.header-logo i {
+  color: var(--green-color);
+}
+
+.header-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 8px;
+}
+
+.header-link {
+  border-radius: 4px;
+  transition: all 0.2s linear;
+  display: block;
+}
+
+.header-other i {
+  font-size: 1.6rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--light-color);
+  color: var(--blue-color);
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.header-other i:hover {
+  transform: rotate(360deg);
+  color: var(--white-color);
+  background-color: var(--green-color);
+}
+
+/* End header css */

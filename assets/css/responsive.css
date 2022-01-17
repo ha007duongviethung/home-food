@@ -1,5 +1,48 @@
 /*Kích thước cho Smart phone nhỏ*/
 @media screen and (min-width: 240px) {
+  html,
+  body {
+    font-size: 55%;
+  }
+
+  .header-small {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.2s linear;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 1px solid rgba(0, 0, 0, 0.2);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header-small.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header-small .header-link {
+    font-size: 2rem;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: var(--light-color);
+  }
+
+  .header-link.active,
+  .header-link:hover {
+    color: var(--white-color);
+    background-color: var(--green-color);
+  }
+
+  .header-menu {
+    display: block;
+  }
+
+  .show {
+    display: block;
+  }
 }
 
 /*Kích thước cho Smart phone lớn(480 x 640)*/
@@ -16,6 +59,38 @@
 
 /*Kích thước cho Laptop nhỏ(1024 x 768)*/
 @media screen and (min-width: 1024px) {
+  html,
+  body {
+    font-size: 62.5%;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header-small {
+    position: relative;
+    display: flex;
+    top: 0;
+    border-top: none;
+    clip-path: none;
+  }
+
+  .header-small .header-link {
+    font-size: 1.8rem;
+    padding: 12px 16px;
+    margin-top: 10px;
+    background-color: var(--light-color);
+    margin-top: 0;
+    background-color: var(--white-color);
+    color: var(--text-color);
+  }
+
+  .header-link.active,
+  .header-link:hover {
+    color: var(--white-color);
+    background-color: var(--green-color);
+  }
 }
 
 /*Kích thước cho Laptop lớn(1280 x 1024)*/
